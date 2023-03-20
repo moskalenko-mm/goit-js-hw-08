@@ -30,7 +30,7 @@ function handleSubmit(event) {
 
 function updateOutput() {
   if (JSON.parse(localStorage.getItem(localStorageKey))) {
-    getedData = JSON.parse(localStorage.getItem(localStorageKey));
+    const getedData = JSON.parse(localStorage.getItem(localStorageKey));
     inputEmail.value = getedData.email || '';
     textareaMessage.value = getedData.message || '';
   }
